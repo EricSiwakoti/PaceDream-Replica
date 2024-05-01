@@ -10,7 +10,9 @@ const TabSection: React.FC<TabSectionProps> = ({ title, active, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className={`cursor-pointer p-2 ${active ? "border border-blue-500" : ""}`}
+      className={`cursor-pointer p-2 py-4 px-6 rounded-md ${
+        active ? "bg-purple-900" : ""
+      }`}
     >
       {title}
     </div>
