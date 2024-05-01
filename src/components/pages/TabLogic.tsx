@@ -26,8 +26,11 @@ const TabLogic: React.FC = () => {
   };
 
   return (
-    <div>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+    <div className="flex flex-col justify-start items-start px-20 mt-4">
+      <div
+        className="flex text-xl text-center text-white bg-slate-800"
+        style={{ borderTopLeftRadius: "8px", borderTopRightRadius: "8px" }}
+      >
         <TabSection
           title="Room Stays"
           active={activeTab === "RoomStays"}
